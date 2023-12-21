@@ -1,0 +1,33 @@
+.my-confirm-title {
+  font-size: large;
+  margin-inline: auto;
+  border-bottom: 2px solid #e9ecf2;
+}
+
+.my-confirm-text {
+  word-wrap: break-word;
+}
+
+.my-confirm-btn-container {
+  display: flex;
+  gap: 24px;
+}
+
+.my-confirm-btn {
+  width: 140px;
+  height: 54px !important;
+}
+
+.my-confirm-cancel-btn {
+}
+
+.my-confirm-confirm-btn {
+  background-color: #94e894;
+}
+
+
+
+.horizontally-centered {
+  margin-inline: auto;
+}
+

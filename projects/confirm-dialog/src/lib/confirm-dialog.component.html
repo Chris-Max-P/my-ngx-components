@@ -1,0 +1,18 @@
+<div class="confirm-dialog">
+  <h3 class="my-confirm-title horizontally-centered">{{data.title}}</h3>
+  <span mat-dialog-content class="my-confirm-text">
+    {{data.text}}
+  </span>
+  <mat-dialog-actions>
+    <div class="my-confirm-btn-container horizontally-centered">
+      <button *ngIf="data.showCancelButton" mat-raised-button mat-dialog-close
+              class="my-confirm-btn my-confirm-cancel-btn" (click)="onCancel()">
+        {{data.cancelText}}
+      </button>
+      <button mat-raised-button mat-dialog-close cdkFocusInitial
+              class="my-confirm-btn my-confirm-confirm-btn" (click)="onConfirm()">
+        {{data.confirmText}}
+      </button>
+    </div>
+  </mat-dialog-actions>
+</div>
