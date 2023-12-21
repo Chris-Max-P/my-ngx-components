@@ -1,24 +1,25 @@
-# ConfirmDialog
+# Usage
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
+## confirm-dialog.service.ts
 
-## Code scaffolding
+### Functions
 
-Run `ng generate component component-name --project confirm-dialog` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project confirm-dialog`.
-> Note: Don't forget to add `--project confirm-dialog` or else it will be added to the default project in your `angular.json` file. 
+**openConfirmDialog(confirmDialogData)**
 
-## Build
+confirmDialogData:
+```typescript
+{
+  title: string, //title is obligatory 
+  text = '';
 
-Run `ng build confirm-dialog` to build the project. The build artifacts will be stored in the `dist/` directory.
+  confirmText = '';
+  confirmAction: Function = () => {};
+  confirmActionArgs = [];
 
-## Publishing
+  cancelText = '';
+  cancelAction: Function = () => {};
+  cancelActionArgs = [];
 
-After building your library with `ng build confirm-dialog`, go to the dist folder `cd dist/confirm-dialog` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test confirm-dialog` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+  showCancelButton = true;
+}
+```
